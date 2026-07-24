@@ -17,17 +17,27 @@ NOMBRE_CLINICA = "Fisiocore - Clínica de Fisioterapia"
 st.title(f"📊 {NOMBRE_CLINICA}")
 st.markdown("Panel de control y análisis de pacientes en tiempo real.")
 
-# Función para cargar los datos limpios desde el archivo CSV
+# Función para cargar y limpiar los datos desde el archivo CSV
 @st.cache_data
 def cargar_datos():
     df = pd.read_csv("base_datos_clinica.csv")
+    
+    # Si tu archivo tiene una columna de teléfono (ej. 'Telefono' o 'Tel'), 
+    # estandarizamos el formato a "xxxx-xxxx" automáticamente:
+    for col in ['Telefono', 'Tel', 'Celular']:
+        if col in df.columns:
+            # Limpiamos cualquier carácter extraño y dejamos solo números
+            df[col] = df[col].astype(str).str.replace(r'\D', '', regex=True)
+            # Aplicamos el formato xxxx-xxxx si tienen 8 dígitos
+            df[col] = df[col].apply(lambda x: f"{x[:4]}-{x[4:]}" if len(x) == 8 else x)
+            
     return df
 
 # Carga segura de datos
 try:
     df = cargar_datos()
 
-    # Métricas principales (KPIs) - Edad promedio redondeada como entero
+    # Métricas principales (KPIs)
     col1, col2, col3 = st.columns(3)
     col1.metric("Total de Pacientes", len(df))
     
@@ -72,7 +82,7 @@ try:
         else:
             st.info("Faltan columnas de sesiones para graficar.")
 
-    # Tabla interactiva con los datos finales
+    # Tabla interactiva con los datos limpios
     st.subheader("Registro Detallado")
     st.dataframe(df_filtrado, use_container_width=True)
 
