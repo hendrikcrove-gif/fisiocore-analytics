@@ -1,53 +1,66 @@
+import streamlit as st
 import pandas as pd
+import plotly.express as px
 from faker import Faker
 import random
-import os
-from datetime import datetime, timedelta
 
-fake = Faker('es_MX')
+# Configuración de la página
+st.set_page_config(page_title="Fisiocore Analytics", page_icon="📈", layout="wide")
 
-# 1. ESPECIFICA TU CARPETA AQUÍ (Ej. 'C:/Users/TuUsuario/Desktop/Proyecto Clinica')
-# Recuerda usar barras diagonales normales (/)
-ruta_carpeta = '' 
+st.title("📊 Fisiocore Analytics - Panel Clínico")
+st.write("Monitoreo de pacientes, sesiones de fisioterapia y estadísticas en tiempo real.")
 
-# Parámetros de la clínica
-num_pacientes = 100
-diagnosticos = [
-    'Lumbalgia Mecánica',
-    'Esguince Cervical Grado II',
-    'Rehabilitación de Miocardio',
-    'Tendinopatía del Manguito Rotador',
-    'Fascitis Plantar',
-    'Postoperatorio LCA'
-]
-estados_cita = ['Atendido', 'Cancelado', 'No Show', 'Reprogramado']
-
-datos_clinica = []
-
-for _ in range(num_pacientes):
-    fecha_cita = fake.date_between(start_date='-3m', end_date='today')
+# Generador de datos simulados con Faker
+@st.cache_data
+def generar_datos():
+    fake = Faker('es_ES')
+    nombres_lesiones = ['Esguince de tobillo', 'Lumbalgia', 'Tendinitis rotuliana', 'Cervicalgia', 'Pubalgia', 'Fascitis plantar']
+    estados = ['En tratamiento', 'Alta médica', 'Evaluación inicial']
     
-    paciente = {
-        'ID_Paciente': fake.unique.random_number(digits=5),
-        'Nombre_Completo': fake.name(),
-        'Telefono': fake.phone_number(),
-        'Edad': random.randint(18, 75),
-        'Diagnostico': random.choice(diagnosticos),
-        'Fecha_Cita': fecha_cita,
-        'Costo_Sesion': random.choice([25.00, 30.00, 45.00]),
-        'Estado_Cita': random.choices(estados_cita, weights=[60, 15, 15, 10], k=1)[0]
-    }
-    datos_clinica.append(paciente)
+    registros = []
+    for i in range(1, 101):
+        registros.append({
+            'ID_Paciente': f"PAC-{1000 + i}",
+            'Nombre': fake.name(),
+            'Edad': random.randint(18, 70),
+            'Lesion': random.choice(nombres_lesiones),
+            'Sesiones_Realizadas': random.randint(1, 15),
+            'Estado': random.choice(estados),
+            'Costo_Sesion': round(random.uniform(25.0, 60.0), 2)
+        })
+    return pd.DataFrame(registros)
 
-df_pacientes = pd.DataFrame(datos_clinica)
+# Cargar los datos
+df = generar_datos()
 
-# 2. Armamos la ruta y guardamos
-nombre_archivo = 'base_datos_clinica.csv'
-ruta_completa = os.path.join(ruta_carpeta, nombre_archivo) if ruta_carpeta else nombre_archivo
+# Métricas superiores (KPIs)
+col1, col2, col3 = st.columns(3)
+col1.metric("Total Pacientes", len(df))
+col2.metric("Edad Promedio", f"{df['Edad'].mean():.1f} años")
+col3.metric("Ingreso Promedio por Sesión", f"${df['Costo_Sesion'].mean():.2f}")
 
-df_pacientes.to_csv(ruta_completa, index=False, encoding='utf-8')
+st.markdown("---")
 
-# 3. El rastreador infalible
-print("\n¡Base de datos generada con éxito!")
-print("El archivo se guardó EXACTAMENTE en esta ruta:")
-print(os.path.abspath(ruta_completa))
+# Filtros laterales o en pantalla
+lesion_seleccionada = st.selectbox("Filtrar por tipo de lesión:", ["Todas"] + list(df['Lesion'].unique()))
+if lesion_seleccionada != "Todas":
+    df_filtrado = df[df['Lesion'] == lesion_seleccionada]
+else:
+    df_filtrado = df
+
+# Gráficos con Plotly
+col_g1, col_g2 = st.columns(2)
+
+with col_g1:
+    st.subheader("Distribución por Lesiones")
+    fig_lesiones = px.pie(df, names='Lesion', hole=0.4, color_discrete_sequence=px.colors.sequential.Teal)
+    st.plotly_chart(fig_lesiones, use_container_width=True)
+
+with col_g2:
+    st.subheader("Sesiones Realizadas por Lesión")
+    fig_sesiones = px.bar(df_filtrado, x='Lesion', y='Sesiones_Realizadas', color='Estado', barmode='group')
+    st.plotly_chart(fig_sesiones, use_container_width=True)
+
+# Tabla interactiva
+st.subheader("Registro Detallado de Pacientes")
+st.dataframe(df_filtrado, use_container_width=True)
