@@ -1,0 +1,101 @@
+ID_Paciente,Nombre_Completo,Telefono,Edad,Diagnostico,Fecha_Cita,Costo_Sesion,Estado_Cita
+91224,Alfonso Mireles,(008)247-9250,74,Tendinopatía del Manguito Rotador,2026-07-23,25.0,Atendido
+84362,Rosa Adela Márquez,005.142.8385,26,Rehabilitación de Miocardio,2026-07-23,30.0,Reprogramado
+88903,Clemente Ramiro Tejeda Vanegas,1-831-580-7701,48,Fascitis Plantar,2026-07-23,25.0,Cancelado
+29610,Esperanza Gallardo,03752410722,51,Postoperatorio LCA,2026-07-23,45.0,Atendido
+10648,Zeferino García Arevalo,054-751-0798x8655,52,Rehabilitación de Miocardio,2026-07-23,25.0,Atendido
+13357,Federico Abraham Batista Lovato,(293)715-7580,25,Postoperatorio LCA,2026-07-23,30.0,Atendido
+60228,Laura Guevara,+58(4)5524037325,38,Rehabilitación de Miocardio,2026-07-23,30.0,Reprogramado
+26956,Armando Humberto Solís,233-691-3903x543,53,Rehabilitación de Miocardio,2026-07-23,25.0,Atendido
+35748,Pablo Griego Caldera,207-413-6760,48,Lumbalgia Mecánica,2026-07-23,45.0,Atendido
+8494,Evelio Carreón,1-165-636-6469,69,Lumbalgia Mecánica,2026-07-23,45.0,Atendido
+27428,Caridad Concepción de Anda,089-398-9295x0156,63,Postoperatorio LCA,2026-07-23,30.0,Atendido
+51150,María José Helena Cuellar,1-876-255-4219,60,Esguince Cervical Grado II,2026-07-23,45.0,Cancelado
+37094,Óliver Tórrez López,+47(6)6689501608,61,Rehabilitación de Miocardio,2026-07-23,25.0,Atendido
+46416,Flavio Salcedo,1-879-257-5494x21704,45,Postoperatorio LCA,2026-07-23,45.0,Atendido
+50351,Rosario Estela Aponte Maldonado,1-925-000-0421,31,Fascitis Plantar,2026-07-23,25.0,Atendido
+80692,Claudia Laura Nazario Tirado,305-089-5543,18,Fascitis Plantar,2026-07-23,30.0,Atendido
+42336,Emilia Heredia Toro,05151252112,48,Rehabilitación de Miocardio,2026-07-23,30.0,Reprogramado
+5140,Federico Eric Olmos,1-035-948-4523,57,Postoperatorio LCA,2026-07-23,30.0,Atendido
+51315,Antonia Daniela Galván Tirado,109-715-3109,60,Tendinopatía del Manguito Rotador,2026-07-23,45.0,No Show
+72738,Delia Ortega,657.946.8244x70004,68,Lumbalgia Mecánica,2026-07-23,30.0,Atendido
+62748,Ing. Mariano Ortega,473.745.3550,62,Rehabilitación de Miocardio,2026-07-23,25.0,Atendido
+24363,Mauricio Almanza,1-785-604-0914,42,Tendinopatía del Manguito Rotador,2026-07-23,30.0,Cancelado
+5490,Srita. Marcela Menéndez,1-287-579-3493x01572,45,Tendinopatía del Manguito Rotador,2026-07-23,45.0,Atendido
+38972,Armando Benavides,(937)976-8543x15075,47,Esguince Cervical Grado II,2026-07-23,30.0,Atendido
+49294,Dr. Serafín Meza,1-507-745-7274x2227,41,Esguince Cervical Grado II,2026-07-23,30.0,Atendido
+53750,Jorge Luis Reynaldo Matos Solorio,(098)928-4788,55,Fascitis Plantar,2026-07-23,45.0,Atendido
+37990,Ariadna Pineda,920-419-1677x7475,18,Postoperatorio LCA,2026-07-23,25.0,Cancelado
+50012,Lic. Alfonso Jimínez,222-377-4462x096,30,Lumbalgia Mecánica,2026-07-23,25.0,Atendido
+85823,Débora Mateo,08701907703,61,Rehabilitación de Miocardio,2026-07-23,45.0,Atendido
+64369,Miriam Guillen Vargas,1-424-872-4525x546,68,Lumbalgia Mecánica,2026-07-23,30.0,Atendido
+24621,Vicente Evelio Pineda,02616956578,24,Esguince Cervical Grado II,2026-07-23,25.0,Cancelado
+93782,Gerardo Almanza,317.539.3792,45,Fascitis Plantar,2026-07-23,30.0,Cancelado
+66669,Bruno Peña Munguía,1-075-171-6620x55347,52,Rehabilitación de Miocardio,2026-07-23,30.0,Atendido
+54822,Francisco Javier Dávila,660-702-9110x1653,31,Postoperatorio LCA,2026-07-23,45.0,Cancelado
+14328,Rafaél Emiliano Bonilla,854-177-1851,62,Tendinopatía del Manguito Rotador,2026-07-23,30.0,Atendido
+34027,Abel Israel Jiménez,633-292-9140,70,Postoperatorio LCA,2026-07-23,45.0,Atendido
+41036,Ruby de la O Muñiz,1-583-449-0371x4693,70,Esguince Cervical Grado II,2026-07-23,25.0,Reprogramado
+66655,Dr. Ricardo Lovato,(171)621-2805,39,Postoperatorio LCA,2026-07-23,25.0,Atendido
+54047,Lic. Salma Hernádez,556.954.0163x04638,61,Fascitis Plantar,2026-07-23,45.0,Atendido
+25865,Asunción Carlota Arroyo Calderón,025.516.7038,44,Rehabilitación de Miocardio,2026-07-23,45.0,Atendido
+1647,Carla Jurado Salcido,736-487-3234x397,43,Esguince Cervical Grado II,2026-07-23,30.0,No Show
+75480,Srita. Dulce Nájera,(935)282-3418x7832,72,Esguince Cervical Grado II,2026-07-23,25.0,Atendido
+33741,Ilse Gloria Alonso,346.122.7907,59,Rehabilitación de Miocardio,2026-07-23,30.0,No Show
+62614,Rocío Ana Carmona,443-881-2508x024,38,Esguince Cervical Grado II,2026-07-23,25.0,Atendido
+45828,Francisco Bonilla,826.214.0918x31080,31,Fascitis Plantar,2026-07-23,25.0,Atendido
+41470,Yeni Márquez,(399)229-5210x9955,60,Fascitis Plantar,2026-07-23,45.0,Cancelado
+49589,Cornelio Acuña,1-845-139-0563x920,20,Rehabilitación de Miocardio,2026-07-23,30.0,Cancelado
+65283,Andrea Moya Yáñez,02267725099,62,Lumbalgia Mecánica,2026-07-23,25.0,Cancelado
+44061,Laura Estévez González,+75(3)0668725671,46,Lumbalgia Mecánica,2026-07-23,30.0,Atendido
+51524,Anabel Carmen Cortez Borrego,(354)502-0308,62,Postoperatorio LCA,2026-07-23,45.0,No Show
+15594,Modesto Abel Ybarra,1-429-057-9233x9590,52,Tendinopatía del Manguito Rotador,2026-07-23,45.0,Reprogramado
+99938,Miguel Villareal Tejeda,1-547-061-7074,72,Esguince Cervical Grado II,2026-07-23,45.0,Atendido
+37110,Reynaldo Barela Cano,946.059.7904x96694,35,Lumbalgia Mecánica,2026-07-23,45.0,Atendido
+54709,Liliana Amelia Tamez,1-221-307-6143x7957,24,Esguince Cervical Grado II,2026-07-23,45.0,Atendido
+2273,Gregorio Jonás Madera Tapia,+87(7)1586119827,38,Fascitis Plantar,2026-07-23,45.0,Reprogramado
+56298,Sandra Cisneros,1-881-427-1150x91924,31,Esguince Cervical Grado II,2026-07-23,25.0,Atendido
+80019,Homero Cavazos Reynoso,208-976-1073x3608,35,Tendinopatía del Manguito Rotador,2026-07-23,25.0,No Show
+47024,Ing. José Carlos Rosado,1-981-081-1100,66,Lumbalgia Mecánica,2026-07-23,45.0,Atendido
+86881,Pedro Terrazas,(567)221-9311x6058,24,Tendinopatía del Manguito Rotador,2026-07-23,45.0,No Show
+12954,Francisco Iglesias Flórez,+29(0)2296511845,42,Fascitis Plantar,2026-07-23,45.0,No Show
+39375,Asunción Paola Luevano,138.469.0014x65433,23,Esguince Cervical Grado II,2026-07-23,45.0,Atendido
+25581,Jos del Valle,817.665.1013x3361,40,Postoperatorio LCA,2026-07-23,45.0,Atendido
+28781,Rubén Alfonso Juárez,+91(3)8550047932,40,Lumbalgia Mecánica,2026-07-23,25.0,No Show
+97495,Ana Tafoya Esparza,1-775-913-2979,23,Tendinopatía del Manguito Rotador,2026-07-23,45.0,Atendido
+36160,Araceli Jiménez,(879)370-4139x393,38,Lumbalgia Mecánica,2026-07-23,45.0,Atendido
+44168,Marco Antonio Marco Antonio Jasso,032-916-2215x31550,32,Rehabilitación de Miocardio,2026-07-23,45.0,Atendido
+20393,Andrea Acuña Guevara,220-481-2048x9874,70,Fascitis Plantar,2026-07-23,30.0,Atendido
+46805,Elvira Judith Godoy Mendoza,810-902-8015,53,Lumbalgia Mecánica,2026-07-23,45.0,Cancelado
+26229,Martín José Bermúdez Naranjo,(680)908-3638x4983,41,Lumbalgia Mecánica,2026-07-23,30.0,Atendido
+92681,Sr. Ignacio Vélez,1-581-576-9590,56,Esguince Cervical Grado II,2026-07-23,30.0,No Show
+5886,Laura Fabiola Colunga,325.505.1603,43,Rehabilitación de Miocardio,2026-07-23,45.0,Cancelado
+7053,Srita. Araceli Rosado,1-520-292-4328x207,53,Tendinopatía del Manguito Rotador,2026-07-23,25.0,Atendido
+74346,Luis Miguel Pabón,1-571-835-5120,39,Postoperatorio LCA,2026-07-23,25.0,Cancelado
+19511,Eloy Juan Carlos Ybarra Coronado,1-154-348-8301x4126,48,Tendinopatía del Manguito Rotador,2026-07-23,45.0,No Show
+93707,Genaro Reynaldo Cabrera Moreno,450-242-4797x730,48,Lumbalgia Mecánica,2026-07-23,30.0,No Show
+49572,Eva Zoé Collado Ramírez,(072)544-7643x8213,60,Lumbalgia Mecánica,2026-07-23,45.0,Cancelado
+15718,Sra. Ariadna Anaya,(996)884-3252x9501,24,Fascitis Plantar,2026-07-23,45.0,Atendido
+73808,Catalina Francisca Ulloa Baca,119.779.1008x836,41,Esguince Cervical Grado II,2026-07-23,30.0,Atendido
+48295,Ing. Gilberto Galván,752-209-4956,37,Tendinopatía del Manguito Rotador,2026-07-23,25.0,Atendido
+68343,Silvano Venegas Candelaria,639.775.1216,49,Fascitis Plantar,2026-07-23,25.0,Cancelado
+47308,Dr. José Carlos Alonso,961-020-9462x399,38,Postoperatorio LCA,2026-07-23,30.0,Atendido
+30438,Sra. Rosario Mayorga,189-314-8770x5703,21,Postoperatorio LCA,2026-07-23,45.0,Cancelado
+91155,Ing. Armando Zedillo,(889)465-5261,46,Rehabilitación de Miocardio,2026-07-23,30.0,Atendido
+33789,Irene Sisneros Ayala,04353149566,56,Fascitis Plantar,2026-07-23,30.0,No Show
+55453,Celia Saavedra,1-095-660-0127x46961,43,Lumbalgia Mecánica,2026-07-23,25.0,Atendido
+28702,Rolando Patricio Sevilla Jiménez,(956)642-9469,31,Rehabilitación de Miocardio,2026-07-23,30.0,Cancelado
+75426,Mercedes Borrego Barrientos,254.803.1147,71,Esguince Cervical Grado II,2026-07-23,30.0,Atendido
+73854,Adriana Ballesteros,04134760265,46,Lumbalgia Mecánica,2026-07-23,30.0,Reprogramado
+23497,Sra. Pilar Delgado,(145)217-8057x900,28,Esguince Cervical Grado II,2026-07-23,30.0,Atendido
+94400,Ing. Sofía Prieto,1-116-913-0013,74,Rehabilitación de Miocardio,2026-07-23,30.0,Atendido
+7638,Augusto Rufino Soliz Roque,1-493-240-6810,38,Rehabilitación de Miocardio,2026-07-23,30.0,Atendido
+30895,Eva Patricia Fonseca,427.663.9318x6228,62,Esguince Cervical Grado II,2026-07-23,30.0,Atendido
+57433,Wendolin Barela,1-912-394-0522,30,Fascitis Plantar,2026-07-23,30.0,Atendido
+25731,Rocío Arias Escalante,08852641401,50,Lumbalgia Mecánica,2026-07-23,30.0,Atendido
+86058,Marisol Ofelia Arevalo Galindo,1-457-062-6624x99767,60,Esguince Cervical Grado II,2026-07-23,25.0,Atendido
+95490,Isabela Espinal Padilla,987-526-5927x90288,37,Lumbalgia Mecánica,2026-07-23,45.0,Atendido
+84383,Ing. Ana María Acuña,(908)539-8279,54,Esguince Cervical Grado II,2026-07-23,30.0,No Show
+10002,Roberto Ángel Rodarte Sierra,+22(1)0208535932,50,Lumbalgia Mecánica,2026-07-23,25.0,Cancelado
+21867,Dra. Esmeralda Barragán,00197845147,42,Fascitis Plantar,2026-07-23,30.0,Atendido
+82790,Óscar Alfonso Bermúdez,572-910-7168,27,Rehabilitación de Miocardio,2026-07-23,30.0,Atendido
